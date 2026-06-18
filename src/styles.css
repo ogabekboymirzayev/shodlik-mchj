@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1a1a;
+  --color-ink-2: #232323;
+  --color-concrete: #8a8a8a;
+  --color-concrete-light: #d9d9d9;
+  --color-accent: #e65c00;
+  --color-accent-hover: #ff6a0d;
+  --font-display: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: #ffffff;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle reveal animation */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.7s ease-out both; }
+
+.testimonial-card {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+}
+
+.testimonial-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-card:hover {
+  border-color: rgba(230, 92, 0, 0.55);
+}
+
+@keyframes contact-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.18);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.floating-contact {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-contact__btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  animation: contact-pulse 2.8s infinite;
+}
+
+.floating-contact__btn::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  background: rgba(26, 26, 26, 0.92);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.floating-contact__btn:hover,
+.floating-contact__btn:focus-visible {
+  transform: scale(1.1);
+  filter: brightness(1.03);
+}
+
+.floating-contact__btn:hover::after,
+.floating-contact__btn:focus-visible::after {
+  opacity: 1;
+}
+
+.floating-contact__btn--telegram {
+  background: #229ed9;
+}
+
+.floating-contact__btn--whatsapp {
+  background: #25d366;
+}
+
+@media (max-width: 768px) {
+  .floating-contact {
+    right: 16px;
+    bottom: 82px;
+  }
+
+  .floating-contact__btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-contact__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ─── Scroll Reveal Classes ──────────────────────────────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}

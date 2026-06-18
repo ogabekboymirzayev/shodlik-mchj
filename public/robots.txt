@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shodlik-mchj.vercel.app/sitemap.xml
