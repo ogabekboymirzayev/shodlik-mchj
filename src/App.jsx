@@ -9,6 +9,7 @@ import PlitaCalculator from "./components/PlitaCalculator.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Footer from "./components/Footer.jsx";
 import FloatingContactButtons from "./components/FloatingContactButtons.jsx";
+import MobileStickyCTA from "./components/MobileStickyCTA.jsx";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       </main>
       <Footer />
       <FloatingContactButtons />
+      <MobileStickyCTA />
     </div>
   );
 }

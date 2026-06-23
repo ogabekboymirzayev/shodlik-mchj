@@ -47,7 +47,27 @@ export const translations = {
       items: [
         {
           title: "Pol plitalari (PK)",
-          desc: "Uzunlik: 1.5m — 7.1m. Kenglik: 1.0m va 1.2m. Qalinlik: 22sm. Standart: GOST 9561-2016.",
+          desc: "Ko'p qavatli va xususiy binolar uchun eng ko'p ishlatiladigan yechim. Uzunlik: 1.5–7.1 m. Kenglik: 1.0 va 1.2 m. Qalinlik: 22 sm. Standart: GOST 9561-2016. Katta va kichik partiyalar qabul qilinadi.",
+        },
+        {
+          title: "Yo'l va maydon plitalari (PDP)",
+          desc: "Sanoat yo'llari, ombor maydonchalari va og'ir texnika o'tadigan yo'laklar uchun. Yuqori zichlikdagi beton, armatura bilan mustahkamlangan. Standart: GOST 21924-84. Tez yotqizish imkoniyati.",
+        },
+        {
+          title: "Devor panellari (3SP / 3NP)",
+          desc: "Sanoat binolari, omborlar va istiqomat majmualari uchun tayyor devor yechimlari. Issiqlik izolyatsiyasi bilan birga yetkaziladi. Qurilish vaqtini 40% gacha qisqartiradi.",
+        },
+        {
+          title: "Lentasimon poydevor bloklari (FL)",
+          desc: "Har qanday tuproq turidagi binolar uchun mustahkam poydevor. Standart o'lchamlar: 1.2 m va 2.4 m. GOST 13580-85. Tez o'rnatiladi, qurilish muddatini qisqartiradi.",
+        },
+        {
+          title: "Balka va rig'ellar (BP)",
+          desc: "Sanoat ob'ektlari, savdo markazlari va ko'priklar uchun kuchli ko'ndalang konstruktsiyalar. Har xil yuklamaga hisoblangan. Individual loyiha asosida ishlab chiqariladi.",
+        },
+        {
+          title: "Individual buyurtma",
+          desc: "Standart katalogda yo'q o'lcham kerakmi? Muhandislarimiz 3 ish kuni ichida texnik loyiha tayyorlaydi. Minimal qo'shimcha narx bilan. Buyurtmangizni telefon orqali bering.",
         },
       ],
     },
@@ -166,7 +186,27 @@ export const translations = {
       items: [
         {
           title: "Плиты перекрытия (ПК)",
-          desc: "Длина: 1.5m — 7.1m. Ширина: 1.0m и 1.2m. Высота: 22см. Стандарт: GOST 9561-2016.",
+          desc: "Наиболее востребованное решение для многоэтажных и частных домов. Длина: 1.5–7.1 м. Ширина: 1.0 и 1.2 м. Толщина: 22 см. Стандарт: GOST 9561-2016. Принимаются большие и малые партии.",
+        },
+        {
+          title: "Дорожные плиты (ПДП)",
+          desc: "Для промышленных дорог, складских площадок и проездов тяжёлой техники. Высокоплотный бетон, армирован. Стандарт: GOST 21924-84. Быстрый монтаж.",
+        },
+        {
+          title: "Стеновые панели (3СП / 3НП)",
+          desc: "Готовые стены для промышленных зданий, складов и жилых комплексов. С теплоизоляцией. Сокращают срок строительства до 40%.",
+        },
+        {
+          title: "Фундаментные блоки (ФЛ)",
+          desc: "Надёжный фундамент для любых типов грунта. Стандартные размеры: 1.2 м и 2.4 м. GOST 13580-85. Быстрый монтаж, сокращает сроки строительства.",
+        },
+        {
+          title: "Балки и ригели (БП)",
+          desc: "Прочные поперечные конструкции для промышленных объектов, ТЦ и мостов. Рассчитаны под разные нагрузки. Изготавливаются по индивидуальному проекту.",
+        },
+        {
+          title: "Индивидуальный заказ",
+          desc: "Нужны нестандартные размеры? Наши инженеры подготовят техпроект за 3 рабочих дня. Минимальная доплата. Звоните и обсудите заказ.",
         },
       ],
     },

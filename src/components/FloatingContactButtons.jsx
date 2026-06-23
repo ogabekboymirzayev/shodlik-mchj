@@ -2,7 +2,8 @@ import { Send, MessageCircle } from "lucide-react";
 
 export default function FloatingContactButtons() {
   return (
-    <div className="floating-contact" aria-label="Contact quick actions">
+    // Desktop'da ko’rsatiladi. Mobilda MobileStickyCTA komponentiga o’tkazildi.
+    <div className="floating-contact hidden md:flex" aria-label="Contact quick actions">
       <a
         href="https://t.me/+998887502222"
         target="_blank"

@@ -12,6 +12,16 @@
 
 html {
   scroll-behavior: smooth;
+  /* safe-area uchun: iPhone X+ viewport meta ni to‘g‘ri ishlashi üchun */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Mobile sticky CTA bar uchun — content qoplanib qolmasligi uchun */
+@media (max-width: 1023px) {
+  body {
+    /* 64px (bar height) + safe-area */
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 body {
